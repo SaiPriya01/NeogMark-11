@@ -57,6 +57,7 @@ input{
     font-weight: 600;
     color: var(--secondary-color);
     border-radius: 0.5rem;
+    outline: none;
     /* border: none; */
     border: 2px solid var(--primary-color);
     border-bottom: 4px solid var(--primary-color);

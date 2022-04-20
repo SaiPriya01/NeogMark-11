@@ -1,23 +1,25 @@
-const dob = document.querySelector("#dob-input");
+const dob_input = document.querySelector("#dob-input");
 const luckynum = document.querySelector("#lucky-number");
-const chckdobbtn = document.querySelector(".chck-btn");
+const chckbtn = document.querySelector(".chck-btn");
 const message = document.querySelector(".msg");
-chckdobbtn.addEventListener('click', function() {
-    const dob = dob.value;
+var sum = 0;
+chckbtn.addEventListener('click', function() {
+    var dob = dob_input.value;
     calculatSum(dob);
     if (sum && dob) {
         checkLuck(sum, luckynum);
     } else {
         message.innerText = "Enter both the fields";
     }
+    console.log("Check btn")
 
 });
 
 function calculatSum(dob) {
-    const bDate = dob.replaceAll("-", "");
-    let sum = 0;
-    for (i = 0; i < bDate.length; i++) {
-        sum += Number(bDate.charAt(i));
+     dob = dob.replaceAll("-", "");
+    
+    for (i = 0; i < dob.length; i++) {
+        sum += Number(dob.charAt(i));
     }
     console.log(sum);
     return sum;
