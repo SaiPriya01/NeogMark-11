@@ -69,8 +69,8 @@ button{
     padding: 0.5rem;
     background: var(--primary-color);
     color: var(--secondary-color);
-    font-size: 1.3rem;
-    font-weight: 500;
+    font-size: 1.4rem;
+    font-weight: 600;
     border: none;
     border-radius: 00.5rem;
     cursor: pointer;
@@ -100,4 +100,16 @@ button{
     font-size: 1.3rem;
     font-weight: 600;
     text-decoration: none;
+}
+.msg{
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.3rem;
+}
+.emoji{
+    margin-top: 1rem;
+    font-size: 5rem;
+    padding: 0.5rem;
+
 }
